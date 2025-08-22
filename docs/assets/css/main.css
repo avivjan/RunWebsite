@@ -1630,3 +1630,72 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Enhanced Button Styling
+--------------------------------------------------------------*/
+.btn-get-started {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-get-started:hover {
+  background: transparent;
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/*--------------------------------------------------------------
+# Enhanced Color Accents
+--------------------------------------------------------------*/
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.border-accent {
+  border-color: var(--accent-color) !important;
+}
+
+/*--------------------------------------------------------------
+# Card Enhancements
+--------------------------------------------------------------*/
+.card, .icon-box {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover, .icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Section Backgrounds
+--------------------------------------------------------------*/
+.section {
+  position: relative;
+  padding: 60px 0;
+}
+
+.section:nth-child(even) {
+  background-color: var(--surface-color);
+}
+
+.section:nth-child(odd) {
+  background-color: var(--background-color);
+}
