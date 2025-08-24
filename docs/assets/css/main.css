@@ -1701,3 +1701,39 @@ section,
 .section:nth-child(odd) {
   background-color: var(--background-color);
 }
+
+/*--------------------------------------------------------------
+# GitHub Link Styling
+--------------------------------------------------------------*/
+.github-link {
+  background: linear-gradient(135deg, #333 0%, #555 100%);
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.github-link:hover {
+  background: linear-gradient(135deg, #555 0%, #777 100%);
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.github-link i {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* Mobile responsive adjustments for GitHub link */
+@media (max-width: 1199px) {
+  .github-link {
+    margin: 10px 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+}
