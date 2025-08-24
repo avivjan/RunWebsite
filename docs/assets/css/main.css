@@ -1806,3 +1806,21 @@ section,
 .demo-image img:hover {
   transform: scale(1.02);
 }
+
+.demo-video {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.demo-video video {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.demo-video video:hover {
+  transform: scale(1.02);
+}
+
+.demo-video video::-webkit-media-controls {
+  border-radius: 10px;
+}
