@@ -86,7 +86,9 @@
 
         <div class="row position-relative">
 
-          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/barcode-scan2.jpg"></div>
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/barcode-scan2.jpg" class="about-image">
+          </div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
             <div class="about-content">
@@ -385,11 +387,58 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Logic</h2>
-        <p>Run uses Azure Functions for APIs, SignalR for real-time updates, Azure SQL for data, and a React Native client with WebViews for maps.</p>
-        <p>Source available in the project repository.</p>
-
-        <img src="assets/img/arch.png" class="img-fluid" style="height: 560px; position: relative; right: 19px; margin-top: 46px;"/>
+        <p>The "Run" application is built on a robust Azure-based architecture designed for scalability and real-time interaction.</p>
       </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="architecture-content">
+              <div class="architecture-text mb-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4 class="arch-subtitle mb-3">Core Infrastructure</h4>
+                    <p><strong>Azure Functions</strong> serve as the primary API layer, orchestrating backend logic and processing requests. For dynamic, real-time updates and communication, the system leverages <strong>SignalR</strong>, ensuring a seamless experience for all users.</p>
+                    <p>Data management is handled by <strong>Azure BD</strong> (Azure Database), which provides persistent storage and feeds critical information to both Azure Functions and SignalR.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4 class="arch-subtitle mb-3">AI Integration</h4>
+                    <p>The application integrates <strong>Azure OpenAI</strong> to power intelligent features, with its capabilities flowing into Azure Functions for processing. This enables advanced analytics, personalized recommendations, and smart insights for users.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="architecture-text mb-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4 class="arch-subtitle mb-3">User Roles & Services</h4>
+                    <p>The system supports two distinct user roles: the <strong>Trainer</strong> and the <strong>Runner</strong>. Both roles interact with the core logic via Azure Functions and receive live updates through SignalR.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4 class="arch-subtitle mb-3">Mapping & Weather</h4>
+                    <p>For geographical services, the <strong>Trainer</strong> specifically utilizes <strong>Azure Maps</strong> for route planning and event visualization, while the <strong>Runner</strong> integrates with <strong>Azure Maps Weather</strong> to provide relevant environmental conditions during activities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="architecture-text mb-5">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h4 class="arch-subtitle mb-3">Client Architecture</h4>
+                    <p>The client-side experience is delivered through a <strong>React Native</strong> application, which incorporates <strong>WebViews</strong> for rich map functionalities. The complete source code for this architecture is available in the project repository.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-12 text-center">
+            <img src="assets/img/arch.png" class="img-fluid architecture-diagram" alt="Run Application Architecture Diagram" style="max-width: 100%; height: auto; box-shadow: 0 8px 30px rgba(0,0,0,0.15); border-radius: 12px;">
+          </div>
+        </div>
+      </div>
 
     </section><!-- Logic Section -->
 

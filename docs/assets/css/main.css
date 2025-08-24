@@ -1832,6 +1832,27 @@ section,
   padding: 20px 0;
 }
 
+.about-img {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateX(20px) translateY(30px);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: translateX(20px) translateY(30px) scale(1.02);
+}
+
 .about-content .inner-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -2001,5 +2022,88 @@ section,
   
   .highlight-icon {
     margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Architecture Section Styling
+--------------------------------------------------------------*/
+.architecture-content {
+  padding: 30px 0;
+}
+
+.architecture-text {
+  background: var(--surface-color);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.architecture-text:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-color);
+}
+
+.arch-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.arch-subtitle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 25px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), transparent 30%) 100%);
+  border-radius: 2px;
+}
+
+.architecture-text p {
+  font-size: 1.05rem;
+  color: var(--default-color);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.architecture-text p:last-child {
+  margin-bottom: 0;
+}
+
+.architecture-text strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.architecture-diagram {
+  transition: transform 0.3s ease;
+}
+
+.architecture-diagram:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive adjustments for architecture section */
+@media (max-width: 768px) {
+  .architecture-text {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .arch-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .architecture-text p {
+    font-size: 1rem;
   }
 }
