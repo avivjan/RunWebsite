@@ -1793,3 +1793,16 @@ section,
   font-weight: 500;
   color: var(--default-color);
 }
+
+.demo-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.demo-image img {
+  transition: transform 0.3s ease;
+}
+
+.demo-image img:hover {
+  transform: scale(1.02);
+}
