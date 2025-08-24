@@ -86,79 +86,36 @@
 
         <div class="row position-relative">
 
-          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/barcode-scan2.jpg" class="about-image">
-          </div>
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/barcode-scan2.jpg"></div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <div class="about-content">
-              <!-- Main Title -->
-              <h2 class="inner-title mb-4">Run with friends, anywhere</h2>
-              
-              <!-- Introduction -->
-              <div class="intro-section mb-5">
-                <p class="lead-text">Run is a social running app for hosting and joining group runs with live location sharing, event coordination, and route guidance.</p>
-                <p class="sub-text">Create events, pick a track, mark runners as ready, and see everyone on the map in real time.</p>
-              </div>
+            <h2 class="inner-title">Run with friends, anywhere</h2>
+            <div class="our-story">
+              <!-- <h4>Est 1988</h4> -->
+              <!-- <h3>Our Story</h3> -->
+              <p>Run is a social running app for hosting and joining group runs with live location sharing, event coordination, and route guidance.</p>
+              <p>Create events, pick a track, mark runners as ready, and see everyone on the map in real time.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Host or join runs with ready-up and start controls</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Guided routes or free runs with GPS tracking</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Live positions of participants during events</span></li>
+              </ul>
+              <p>Runs are summarized automatically with distance, duration, pace, speed, calories, and elevation insights. Friends and profiles make it easy to train together.</p>
 
-              <!-- Core Features -->
-              <div class="core-features mb-5">
-                <h4 class="section-subtitle mb-3">Core Features</h4>
-                <div class="features-grid">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span>Host or join runs with ready-up and start controls</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span>Guided routes or free runs with GPS tracking</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span>Live positions of participants during events</span>
-                  </div>
-                </div>
+              <div class="watch-video d-flex align-items-center position-relative">
+                <h4 style="font-weight: bold; color: #181840;">Highlights</h4>
               </div>
-
-              <!-- Smart Analytics -->
-              <div class="analytics-section mb-5">
-                <h4 class="section-subtitle mb-3">Smart Analytics</h4>
-                <p class="analytics-text">Runs are summarized automatically with distance, duration, pace, speed, calories, and elevation insights. Friends and profiles make it easy to train together.</p>
-              </div>
-
-              <!-- Key Highlights -->
-              <div class="highlights-section">
-                <h4 class="section-subtitle mb-3">Key Highlights</h4>
-                <div class="highlights-grid">
-                  <div class="highlight-item">
-                    <div class="highlight-icon">
-                      <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <div class="highlight-content">
-                      <h5>Live Map Tracking</h5>
-                      <p>Real-time participant locations on interactive maps</p>
-                    </div>
+                <ul>
+                  <div class="watch-video d-flex align-items-center position-relative">
+                  <li><i class="bi bi-geo-alt"></i><span class="stretched-link">Live map with participant locations</span></li>
                   </div>
-                  <div class="highlight-item">
-                    <div class="highlight-icon">
-                      <i class="bi bi-flag-fill"></i>
-                    </div>
-                    <div class="highlight-content">
-                      <h5>Event Management</h5>
-                      <p>Create events and choose from curated tracks</p>
-                    </div>
+                  <div class="watch-video d-flex align-items-center position-relative">
+                  <li><i class="bi bi-flag"></i><span class="stretched-link">Create events and choose tracks</span></li>
                   </div>
-                  <div class="highlight-item">
-                    <div class="highlight-icon">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <div class="highlight-content">
-                      <h5>Performance Insights</h5>
-                      <p>Automatic run summaries with elevation statistics</p>
-                    </div>
+                  <div class="watch-video d-flex align-items-center position-relative">
+                  <li><i class="bi bi-graph-up"></i><span class="stretched-link">Automatic run summaries with elevation stats</span></li>
                   </div>
-                </div>
-              </div>
+                </ul>
             </div>
           </div>
 
@@ -387,58 +344,11 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Logic</h2>
-        <p>The "Run" application is built on a robust Azure-based architecture designed for scalability and real-time interaction.</p>
+        <p>Run uses Azure Functions for APIs, SignalR for real-time updates, Azure SQL for data, and a React Native client with WebViews for maps.</p>
+        <p>Source available in the project repository.</p>
+
+        <img src="assets/img/arch.png" class="img-fluid" style="height: 560px; position: relative; right: 19px; margin-top: 46px;"/>
       </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="architecture-content">
-              <div class="architecture-text mb-5">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <h4 class="arch-subtitle mb-3">Core Infrastructure</h4>
-                    <p><strong>Azure Functions</strong> serve as the primary API layer, orchestrating backend logic and processing requests. For dynamic, real-time updates and communication, the system leverages <strong>SignalR</strong>, ensuring a seamless experience for all users.</p>
-                    <p>Data management is handled by <strong>Azure BD</strong> (Azure Database), which provides persistent storage and feeds critical information to both Azure Functions and SignalR.</p>
-                  </div>
-                  <div class="col-lg-6">
-                    <h4 class="arch-subtitle mb-3">AI Integration</h4>
-                    <p>The application integrates <strong>Azure OpenAI</strong> to power intelligent features, with its capabilities flowing into Azure Functions for processing. This enables advanced analytics, personalized recommendations, and smart insights for users.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="architecture-text mb-5">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <h4 class="arch-subtitle mb-3">User Roles & Services</h4>
-                    <p>The system supports two distinct user roles: the <strong>Trainer</strong> and the <strong>Runner</strong>. Both roles interact with the core logic via Azure Functions and receive live updates through SignalR.</p>
-                  </div>
-                  <div class="col-lg-6">
-                    <h4 class="arch-subtitle mb-3">Mapping & Weather</h4>
-                    <p>For geographical services, the <strong>Trainer</strong> specifically utilizes <strong>Azure Maps</strong> for route planning and event visualization, while the <strong>Runner</strong> integrates with <strong>Azure Maps Weather</strong> to provide relevant environmental conditions during activities.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="architecture-text mb-5">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h4 class="arch-subtitle mb-3">Client Architecture</h4>
-                    <p>The client-side experience is delivered through a <strong>React Native</strong> application, which incorporates <strong>WebViews</strong> for rich map functionalities. The complete source code for this architecture is available in the project repository.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col-lg-12 text-center">
-            <img src="assets/img/arch.png" class="img-fluid architecture-diagram" alt="Run Application Architecture Diagram" style="max-width: 100%; height: auto; box-shadow: 0 8px 30px rgba(0,0,0,0.15); border-radius: 12px;">
-          </div>
-        </div>
-      </div>
 
     </section><!-- Logic Section -->
 
@@ -460,7 +370,7 @@
                 <h3>Authentication</h3>
                 <p>Secure user authentication system with JWT tokens, providing seamless login and registration while maintaining account security. Users can sign up with email/password or use social login options.</p>
                 <div class="demo-image">
-                  <img src="assets/img/Demo/Authentication.png" alt="Run App Authentication Screen" class="img-fluid rounded demo-img">
+                  <img src="assets/img/Demo/Authentication.png" alt="Run App Authentication Screen" class="img-fluid rounded" style="max-width: 100%; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                 </div>
               </div>
             </div>
@@ -473,7 +383,7 @@
                 <h3>User Profiles</h3>
                 <p>User statistics, graphs, running history, friends, future events, friends requests and coach with AI recommendations and insights</p>
                 <div class="demo-video">
-                  <video controls class="img-fluid rounded demo-vid">
+                  <video controls class="img-fluid rounded" style="max-width: 100%; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     <source src="assets/img/Demo/Userprofile.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
