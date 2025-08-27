@@ -375,6 +375,13 @@
         <h2>Logic</h2>
         <p>Run uses Azure Functions for APIs, SignalR for real-time updates, Azure SQL for data, and a React Native client with WebViews for maps.</p>
         <p>Source available in the project repository.</p>
+        
+        <div class="logic-explanation" data-aos="fade-up" data-aos-delay="200" style="margin: 40px 0; padding: 30px; background: rgba(255, 255, 255, 0.05); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <h4 style="color: #fff; margin-bottom: 20px; font-weight: 600;">System Architecture Overview</h4>
+          <p style="line-height: 1.8; color: #e0e0e0; margin-bottom: 0;">
+            The Run-app system operates as an integrated ecosystem where Azure Functions serves as the central orchestrator, connecting multiple client applications and Azure services through a unified API layer. The mobile application (React Native) and smartwatch clients communicate bidirectionally with Azure Functions to access core functionality, while Azure Functions manages data persistence through Azure DB, provides real-time updates via SignalR, and leverages Azure OpenAI for intelligent coaching recommendations. The system integrates Azure Maps for location services and weather data, enabling GPS tracking, route guidance, and environmental awareness. All components maintain synchronized state through SignalR's real-time communication, ensuring that event updates, runner positions, and status changes are instantly propagated across all connected clients, creating a cohesive experience where users can host or join group runs with live location sharing, event coordination, and AI-powered coaching insights.
+          </p>
+        </div>
 
         <img src="assets/img/arch.png" class="img-fluid" style="height: 560px; position: relative; right: 19px; margin-top: 46px;"/>
       </div><!-- End Section Title -->
